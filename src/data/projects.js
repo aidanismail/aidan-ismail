@@ -1,0 +1,67 @@
+import titrasims from "../assets/titrasims.png";
+import tedx from "../assets/tedx.png";
+import sust from "../assets/sust.png";
+import robot from "../assets/robot.jpeg";
+import analgo from "../assets/analgo.png";
+import ai from "../assets/ai.png";
+import pilketos from "../assets/pilketos.png";
+
+export const projects = [
+  {
+    title: "TITRA SIMS",
+    desc: "Android AR titration simulator built with Unity and Vuforia. Digitalized titration process for pharmacy lab into interactive 3D virtual experiences.",
+    img: titrasims,
+    link: "https://drive.google.com/drive/folders/1G_1j0BzmT727MOmmaechpomC213SvS6d?usp=sharing",
+    alt: "https://github.com/aidanismail/PharmaAR",
+    tags: ["Unity", "C#", "Vuforia"]
+  },
+  {
+    title: "TEDxPadjadjaranUniversity Official Website",
+    desc: "The official responsive website for TEDxPadjadjaran University, featuring a modular design system for visual consistency across all devices.",
+    img: tedx,
+    link: "https://tedxpadjadjaranuniversity.com/",
+    alt: "https://www.figma.com/proto/ma4xdNtbYhDlCVMP4NNOGV/tedX?page-id=&node-id=466-74&p=f&viewport=225%2C417%2C0.02&t=G3k6LPUJEJH71gB2-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=466%3A74&show-proto-sidebar=1",
+    tags: ["Figma", "UI/UX", "Design"]
+  },
+  {
+    title: "Sustainabite",
+    desc: "a UI/UX GEMASTIK 2025 proposal for a food rescue platform connecting MSMEs with surplus food to consumers, utilizing gamification and POS systems to facilitate sustainable environment.",
+    img: sust,
+    link: "https://drive.google.com/drive/folders/1MezbfeLQ_KIGzaRUWxUNKyLSJjUv3Aq8",
+    alt: "https://www.figma.com/proto/UsxRCH96bJeKnqgVtluXAi/SUSTAINABITE-BACKUP?page-id=&node-id=3-4611&p=f&viewport=-438%2C2335%2C0.16&t=68BbqO8QmpUH4KAg-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A4611",
+    tags: ["Figma", "UI/UX", "Design"]
+  },
+  {
+    title: "Smart Follower Robot with Face Recognition",
+    desc: "An autonomous robot capable of real-time face tracking using InsightFace (ArcFace), translating visual data into precise motor control for subject following.",
+    img: robot,
+    link: "https://drive.google.com/file/d/1M5K56R_UKHc0E2HsaeNv2MyVcM5jJR7-/view?usp=drive_link",
+    alt: "https://github.com/mfachri820/RobotikaFaceRecognition",
+    tags: ["Python", "Arduino", "Robotics"]
+  },
+  {
+    title: "Huffman Visualizer & File Compressor",
+    desc: "A custom file compressor and visualizer that demonstrates lossless compression mechanics by rendering binary tree structures and statistics in real-time.",
+    img: analgo,
+    link: "https://aidanismail-file-compressor-app-haumig.streamlit.app/",
+    alt: "https://github.com/aidanismail/File-Compressor",
+    tags: ["Python", "Streamlit", "Algorithm"]
+  },
+  {
+    title: "CodeMind AI Chatbot",
+    desc: "An AI teaching assistant that supports algorithm mastery through interactive code feedback, semantic search, and personalized resource recommendations.",
+    img: ai,
+    link: "https://github.com/mfachri820/AlgorithmAnalysis-AITutor",
+    alt: "https://github.com/mfachri820/AlgorithmAnalysis-AITutor",
+    tags: ["Python", "Streamlit", "Algorithms", "AI"]
+  },
+  {
+    title: "Pemilihan Ketua OSIS SMAN 5 Bandung (2022)",
+    desc: "A responsive E-Voting front-end platform designed for the student body, ensuring a seamless and intuitive voting experience integrated with server-side processing.",
+    img: pilketos,
+    link: "https://github.com/fivecybercommunity/Front-End-Pilketos-2023",
+    alt: "https://github.com/fivecybercommunity/Front-End-Pilketos-2023",
+    tags: ["Web", "Front-End"]
+  }
+];
+
