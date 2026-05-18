@@ -1,9 +1,9 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion as Motion } from "motion/react";
 
 function Card({ id, isHighlighted, title, desc, img, link, alt, tags }) {
   return (
-    <motion.div
+    <Motion.div
       id={id}
       className="flex flex-col h-full rounded-lg overflow-hidden"
       // 3. Define the Animation Logic
@@ -77,7 +77,7 @@ function Card({ id, isHighlighted, title, desc, img, link, alt, tags }) {
           </div>
         </div>
       </div>
-    </motion.div>
+    </Motion.div>
   );
 }
 

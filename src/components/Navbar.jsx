@@ -1,7 +1,7 @@
 import logo from "../assets/logo.png";
 import { useRef, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion as Motion } from "motion/react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -95,7 +95,7 @@ function Navbar() {
           }}
         >
           {isOpen && (
-            <motion.div
+            <Motion.div
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
@@ -113,7 +113,7 @@ function Navbar() {
                 </a>
                 <a href="#works" onClick={(e) => handleMobileNavClick(e, "works")}>Works</a>
               </div>
-            </motion.div>
+            </Motion.div>
           )}
         </AnimatePresence>
 

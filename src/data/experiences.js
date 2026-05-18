@@ -1,5 +1,19 @@
 export const experienceData = [
   {
+    title: "Front-End Developer",
+    company: "TEDxPadjadjaranUniversity",
+    period: "Apr 2026 – Present",
+    desc: "Built responsive frontend sections and reusable UI components for the TEDx event website, translating design requirements into production-ready pages.",
+    tags: ["React", "Next.js", "Typescript", "GSAP"]
+  },
+  {
+    title: "AI Engineer Cohort",
+    company: "Coding Camp powered by DBS Foundation",
+    period: "Feb 2026 – Present",
+    desc: "Participating in project-based AI engineering training covering machine learning, deep learning fundamentals, model development, and AI solution design.",
+    tags: ["AI", "Python", "Machine Learning", "Deep Learning"]
+  },
+  {
     title: "Unity Developer Intern",
     company: "Pusat Inovasi Pengajaran dan Pembelajaran Unpad",
     period: "August – December 2025",

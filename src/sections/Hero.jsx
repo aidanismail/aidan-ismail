@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
 
 function Hero({ onHighlightProject }) {
   const handleScrollToProject = (e) => {
@@ -48,7 +49,7 @@ function Hero({ onHighlightProject }) {
           />
         </div>
 
-        <div className="flex text-center justify-center mt-6 bg-white/35 py-4 rounded-xl">
+        <div className="flex flex-col text-center align justify-center mt-6 bg-white/35 py-4 rounded-xl">
           <h5>
             Open for Work! Currently finished{" "}
             <a
@@ -59,6 +60,7 @@ function Hero({ onHighlightProject }) {
               TITRA SIMS
             </a>
           </h5>
+          
         </div>
 
         {/* bio */}
@@ -137,6 +139,16 @@ function Hero({ onHighlightProject }) {
             >
               <FaEnvelope size={24} />
               <span>aidanismail12@gmail.com</span>
+            </a>
+
+            <a
+              href="tel:+6281222188986"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 w-fit px-4 py-2 rounded-lg hover:bg-sky-100  font-bold transition-colors"
+            >
+              <FaPhone size={24} />
+              <span>+62 812-2218-8986</span>
             </a>
 
             <a

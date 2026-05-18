@@ -5,8 +5,35 @@ import robot from "../assets/robot.jpeg";
 import analgo from "../assets/analgo.png";
 import ai from "../assets/ai.png";
 import pilketos from "../assets/pilketos.png";
+import suaraunpad from "../assets/suaraunpad.png";
+import zichara from "../assets/zichara.png";
+import tedx2026 from "../assets/tedx2026.png";
 
 export const projects = [
+  {
+    title: "TEDxPadjadjaranUniversity 2026 Official Website",
+    desc: "The official responsive website for TEDxPadjadjaran University, featuring interactive page layouts and animation-rich sections for a consistent visual experience across all devices.",
+    img: tedx2026,
+    link: "https://tedxpadjadjaranuniversity.com/",
+    alt: "https://github.com/HitMagicc/tedx-unpad2026",
+    tags: ["Front-End", "React", "Next.js", "Typescript", "GSAP"]
+  },
+  {
+    title: "SUARAUNPAD",
+    desc: "A student advocacy platform for Universitas Padjadjaran students to submit reports, raise aspirations, and participate in policy related voting.",
+    img: suaraunpad,
+    link: "https://github.com/mfachri820/SuaraUnpad-PPL",
+    alt: "https://github.com/mfachri820/SuaraUnpad-PPL",
+    tags: ["Front-End", "React", "Next.js", "Typescript", "Back-End Integration"]
+  },
+  {
+    title: "ZICHARA",
+    desc: "Augmented reality learning application that helps users learn Hanzi characters and Pinyin through interactive visual guidance.",
+    img: zichara,
+    link: "https://drive.google.com/drive/folders/1_XeGWrUN8J0faLrk6qlAtklywWt17isr?usp=sharing",
+    alt: "https://github.com/Kelompok-2-IMK/zichara/",
+    tags: ["Unity", "C#", "Vuforia"]
+  },
   {
     title: "TITRA SIMS",
     desc: "Android AR titration simulator built with Unity and Vuforia. Digitalized titration process for pharmacy lab into interactive 3D virtual experiences.",
@@ -16,10 +43,10 @@ export const projects = [
     tags: ["Unity", "C#", "Vuforia"]
   },
   {
-    title: "TEDxPadjadjaranUniversity Official Website",
+    title: "TEDxPadjadjaranUniversity 2025 Official Website",
     desc: "The official responsive website for TEDxPadjadjaran University, featuring a modular design system for visual consistency across all devices.",
     img: tedx,
-    link: "https://tedxpadjadjaranuniversity.com/",
+    link: "https://www.figma.com/proto/ma4xdNtbYhDlCVMP4NNOGV/tedX?page-id=&node-id=466-74&p=f&viewport=225%2C417%2C0.02&t=G3k6LPUJEJH71gB2-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=466%3A74&show-proto-sidebar=1",
     alt: "https://www.figma.com/proto/ma4xdNtbYhDlCVMP4NNOGV/tedX?page-id=&node-id=466-74&p=f&viewport=225%2C417%2C0.02&t=G3k6LPUJEJH71gB2-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=466%3A74&show-proto-sidebar=1",
     tags: ["Figma", "UI/UX", "Design"]
   },
@@ -64,4 +91,3 @@ export const projects = [
     tags: ["Web", "Front-End"]
   }
 ];
-
