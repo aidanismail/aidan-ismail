@@ -22,21 +22,19 @@ function NotFound() {
 
         {/* Judul & Deskripsi */}
         <h2 className="text-2xl font-bold text-stone-600  mb-4">
-          Halaman tidak ditemukan
+          Page not Found
         </h2>
 
         <p className="text-stone-500 dark:text-stone-400 mb-10 max-w-sm mx-auto leading-relaxed text-sm">
-          Sepertinya kamu tersesat. Halaman yang kamu cari mungkin sudah
-          dipindahkan atau tidak pernah ada.
+          It looks like you're lost. The page you're looking for may have been
+          moved or may no longer exist.
         </p>
-
-        {/* Tombol Kembali dengan warna aksen ungu */}
 
         <Link
           to="/"
           className="inline-flex items-center justify-center text-sky-700 gap-3 w-fit px-4 py-2 rounded-lg hover:bg-sky-100  font-bold transition-colors"
         >
-          <span>Kembali</span>
+          <span>Back</span>
         </Link>
       </motion.div>
     </main>

@@ -14,16 +14,13 @@ function Works({ highlightedId }) {
         {/* 2. Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => {
-            // Define the ID (e.g., "titra-sims")
-            const projectId = project.title.includes("TITRA SIMS")
-              ? "titra-sims"
-              : `project-${index}`;
+            // Define the ID
+            const projectId = project.id;
 
             return (
               <Card
                 key={index}
                 id={projectId}
-            
                 isHighlighted={highlightedId === projectId}
                 title={project.title}
                 desc={project.desc}

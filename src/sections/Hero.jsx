@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import aidan from "../assets/aidan.png";
+import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
@@ -8,11 +9,9 @@ import { FaInstagram } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 
 function Hero({ onHighlightProject }) {
-  const handleScrollToProject = (e) => {
+  const handleScrollToProject = (e, targetId) => {
     e.preventDefault(); // Stop the default jump
 
-    // 1. Find the ID we set in Works.jsx
-    const targetId = "titra-sims";
     const element = document.getElementById(targetId);
 
     if (element) {
@@ -53,14 +52,40 @@ function Hero({ onHighlightProject }) {
           <h5>
             Open for Work! Currently finished{" "}
             <a
-              href="#titra-sims"
-              onClick={handleScrollToProject}
+              href="#suaraunpad"
+              onClick={(e) => handleScrollToProject(e, "suaraunpad")}
               className="hover:underline text-sky-700"
             >
-              TITRA SIMS
+              SUARA UNPAD,
+            </a>
+            <span> </span>
+            <a
+              href="#zichara"
+              onClick={(e) => handleScrollToProject(e, "zichara")}
+              className="hover:underline text-sky-700"
+            >
+              ZICHARA
             </a>
           </h5>
-          
+
+          <h5 className="text-sm">
+            Currently working on{" "}
+            <a
+              href="#tedx2026"
+              onClick={(e) => handleScrollToProject(e, "tedx2026")}
+              className="hover:underline text-sky-700"
+            >
+              TEDxPU 2026,
+            </a>
+            <span> </span>
+            <a
+              href="#youri"
+              onClick={(e) => handleScrollToProject(e, "youri")}
+              className="hover:underline text-sky-700"
+            >
+              YOURI - Smart Cooking Assistant
+            </a>
+          </h5>
         </div>
 
         {/* bio */}
@@ -70,14 +95,17 @@ function Hero({ onHighlightProject }) {
           </h3>
 
           <h4 className="text-justify leading-normal">
-            I am a Computer Science undergraduate at Universitas Padjadjaran
-            with a deep curiosity for AI, software development (anything), and
-            mathematics. I thrive in collaborative environments, where I love
-            tackling real-world problems and building innovative solutions.
-            Passionate about knowledge sharing, I believe that we grow faster
-            when we learn together.
+            Computer Science undergraduate at Universitas Padjadjaran
+            specializing in Software Engineering and Applied AI. I build
+            scalable, data-driven systems and interactive AR applications to
+            solve real-world problems.
           </h4>
-
+          <Link
+            to="/resume"
+            className="cursor-pointer hover:underline text-sm text-sky-600 font-medium"
+          >
+            My Resume
+          </Link>
           <div className="mt-6 text-justify leading-relaxed">
             <div>
               <div className="flex gap-4 mb-2">

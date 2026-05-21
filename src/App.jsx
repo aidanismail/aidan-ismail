@@ -4,10 +4,11 @@ import Works from "./sections/Works";
 import Experiences from "./sections/Experiences";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import NotFound from "./sections/NotFound"; // Sesuaikan path ini dengan letak file NotFound.jsx kamu
+import NotFound from "./sections/NotFound";
 import { Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion as Motion } from "motion/react";
+import ResumePage from "./sections/Resume";
 
 function App() {
   useEffect(() => {
@@ -36,10 +37,9 @@ function App() {
   return (
     <div className="main-content min-h-screen">
       <Routes>
-        
         {/* ROUTE 1: Halaman Utama Portofolio (Hanya muncul di path "/") */}
-        <Route 
-          path="/" 
+        <Route
+          path="/"
           element={
             <>
               <Navbar />
@@ -60,11 +60,10 @@ function App() {
               </Motion.div>
               <Footer />
             </>
-          } 
+          }
         />
-
+        <Route path="/resume" element={<ResumePage />} />
         <Route path="*" element={<NotFound />} />
-        
       </Routes>
     </div>
   );
