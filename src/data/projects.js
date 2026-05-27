@@ -1,9 +1,9 @@
 import titrasims from "../assets/titrasims.png";
 import tedx from "../assets/tedx.png";
 import sust from "../assets/sust.png";
-import robot from "../assets/robot.jpeg";
-import analgo from "../assets/analgo.png";
-import ai from "../assets/ai.png";
+// import robot from "../assets/robot.jpeg";
+// import analgo from "../assets/analgo.png";
+// import ai from "../assets/ai.png";
 import pilketos from "../assets/pilketos.png";
 import suaraunpad from "../assets/suaraunpad.png";
 import zichara from "../assets/zichara.png";
@@ -27,7 +27,14 @@ export const projects = [
     img: tedx2026,
     link: "https://tedxpadjadjaranuniversity.com/",
     alt: "https://github.com/HitMagicc/tedx-unpad2026",
-    tags: ["Front-End", "React", "Next.js", "Typescript", "GSAP"]
+    tags: [
+      "Front-End",
+      "React",
+      "Next.js",
+      "Typescript",
+      "GSAP",
+      "Back-End Integration"
+    ]
   },
   {
     id: "suaraunpad",
@@ -80,33 +87,33 @@ export const projects = [
     alt: "https://www.figma.com/proto/UsxRCH96bJeKnqgVtluXAi/SUSTAINABITE-BACKUP?page-id=&node-id=3-4611&p=f&viewport=-438%2C2335%2C0.16&t=68BbqO8QmpUH4KAg-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A4611",
     tags: ["Figma", "UI/UX", "Design"]
   },
-  {
-    id: "robotik",
-    title: "Smart Follower Robot with Face Recognition",
-    desc: "An autonomous robot capable of real-time face tracking using InsightFace (ArcFace), translating visual data into precise motor control for subject following.",
-    img: robot,
-    link: "https://drive.google.com/file/d/1M5K56R_UKHc0E2HsaeNv2MyVcM5jJR7-/view?usp=drive_link",
-    alt: "https://github.com/mfachri820/RobotikaFaceRecognition",
-    tags: ["Python", "Arduino", "Robotics"]
-  },
-  {
-    id: "analgo",
-    title: "Huffman Visualizer & File Compressor",
-    desc: "A custom file compressor and visualizer that demonstrates lossless compression mechanics by rendering binary tree structures and statistics in real-time.",
-    img: analgo,
-    link: "https://aidanismail-file-compressor-app-haumig.streamlit.app/",
-    alt: "https://github.com/aidanismail/File-Compressor",
-    tags: ["Python", "Streamlit", "Algorithm"]
-  },
-  {
-    id: "ai",
-    title: "CodeMind AI Chatbot",
-    desc: "An AI teaching assistant that supports algorithm mastery through interactive code feedback, semantic search, and personalized resource recommendations.",
-    img: ai,
-    link: "https://github.com/mfachri820/AlgorithmAnalysis-AITutor",
-    alt: "https://github.com/mfachri820/AlgorithmAnalysis-AITutor",
-    tags: ["Python", "Streamlit", "Algorithms", "AI"]
-  },
+  // {
+  //   id: "robotik",
+  //   title: "Smart Follower Robot with Face Recognition",
+  //   desc: "An autonomous robot capable of real-time face tracking using InsightFace (ArcFace), translating visual data into precise motor control for subject following.",
+  //   img: robot,
+  //   link: "https://drive.google.com/file/d/1M5K56R_UKHc0E2HsaeNv2MyVcM5jJR7-/view?usp=drive_link",
+  //   alt: "https://github.com/mfachri820/RobotikaFaceRecognition",
+  //   tags: ["Python", "Arduino", "Robotics"]
+  // },
+  // {
+  //   id: "analgo",
+  //   title: "Huffman Visualizer & File Compressor",
+  //   desc: "A custom file compressor and visualizer that demonstrates lossless compression mechanics by rendering binary tree structures and statistics in real-time.",
+  //   img: analgo,
+  //   link: "https://aidanismail-file-compressor-app-haumig.streamlit.app/",
+  //   alt: "https://github.com/aidanismail/File-Compressor",
+  //   tags: ["Python", "Streamlit", "Algorithm"]
+  // },
+  // {
+  //   id: "ai",
+  //   title: "CodeMind AI Chatbot",
+  //   desc: "An AI teaching assistant that supports algorithm mastery through interactive code feedback, semantic search, and personalized resource recommendations.",
+  //   img: ai,
+  //   link: "https://github.com/mfachri820/AlgorithmAnalysis-AITutor",
+  //   alt: "https://github.com/mfachri820/AlgorithmAnalysis-AITutor",
+  //   tags: ["Python", "Streamlit", "Algorithms", "AI"]
+  // },
   {
     id: "pilketos",
     title: "Pemilihan Ketua OSIS SMAN 5 Bandung (2022)",
@@ -114,6 +121,6 @@ export const projects = [
     img: pilketos,
     link: "https://github.com/fivecybercommunity/Front-End-Pilketos-2023",
     alt: "https://github.com/fivecybercommunity/Front-End-Pilketos-2023",
-    tags: ["Web", "Front-End"]
+    tags: ["Front-End", "PHP"]
   }
 ];

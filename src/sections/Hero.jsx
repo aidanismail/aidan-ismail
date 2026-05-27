@@ -96,16 +96,10 @@ function Hero({ onHighlightProject }) {
 
           <h4 className="text-justify leading-normal">
             Computer Science undergraduate at Universitas Padjadjaran
-            specializing in Software Engineering and Applied AI. I build
-            scalable, data-driven systems and interactive AR applications to
-            solve real-world problems.
+            specializing in Software Engineering, Applied AI, and Data Stuffs. I
+            build and design scalable digital solutions to solve anything.
           </h4>
-          <Link
-            to="/resume"
-            className="cursor-pointer hover:underline text-sm text-sky-600 font-medium"
-          >
-            My Resume
-          </Link>
+
           <div className="mt-6 text-justify leading-relaxed">
             <div>
               <div className="flex gap-4 mb-2">
@@ -188,6 +182,14 @@ function Hero({ onHighlightProject }) {
               <FaInstagram size={24} />
               <span>@aidanismail12</span>
             </a>
+
+            <Link
+              target="_blank"
+              to="/resume"
+              className="flex items-center gap-3 w-fit px-4 py-2 rounded-lg hover:bg-sky-100  font-bold transition-colors"
+            >
+              My Resume
+            </Link>
           </div>
         </div>
       </main>

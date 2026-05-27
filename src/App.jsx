@@ -51,9 +51,9 @@ function App() {
                 <section id="hero" className="scroll-mt-100">
                   <Hero onHighlightProject={triggerHighlight} />
                 </section>
-                <section id="experiences" className="scroll-mt-20">
+                {/* <section id="experiences" className="scroll-mt-20">
                   <Experiences />
-                </section>
+                </section> */}
                 <section id="works" className="scroll-mt-20">
                   <Works highlightedId={highlightedProject} />
                 </section>

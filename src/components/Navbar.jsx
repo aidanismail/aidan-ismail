@@ -37,9 +37,11 @@ function Navbar() {
   };
 
   return (
-    <nav ref={navRef} className="bg-[#ffffff]/40 backdrop-blur-xl w-full sticky top-0 z-50">
+    <nav
+      ref={navRef}
+      className="bg-[#ffffff]/40 backdrop-blur-xl w-full sticky top-0 z-50"
+    >
       <div className="flex flex-wrap justify-between items-center py-2 px-4 max-w-4xl mx-auto">
-
         {/* logo */}
         <a
           href="#hero"
@@ -55,29 +57,43 @@ function Navbar() {
             src={logo}
             alt="aidan's logo"
           />
-          <p className="font-bold font-cal text-xl tracking-tighter">Aidan Ismail</p>
+          <p className="font-bold font-cal text-xl tracking-tighter">
+            Aidan Ismail
+          </p>
         </a>
 
         {/* hamburger */}
         <div className="sm:hidden mt-2">
-          <button type="button" onClick={() => setIsOpen((v) => !v)} aria-label="Toggle menu">
+          <button
+            type="button"
+            onClick={() => setIsOpen((v) => !v)}
+            aria-label="Toggle menu"
+          >
             <GiHamburgerMenu size={24} />
           </button>
         </div>
 
         {/* desktop links */}
         <div className="hidden sm:flex gap-6 text-xl">
-          <a href="#hero" onClick={(e) => handleDesktopNavClick(e, "hero")} className="hover:underline">
+          {/* <a
+            href="#hero"
+            onClick={(e) => handleDesktopNavClick(e, "hero")}
+            className="hover:underline"
+          >
             Home
-          </a>
-          <a
+          </a> */}
+          {/* <a
             href="#experiences"
             onClick={(e) => handleDesktopNavClick(e, "experiences")}
             className="hover:underline"
           >
             Experiences
-          </a>
-          <a href="#works" onClick={(e) => handleDesktopNavClick(e, "works")} className="hover:underline">
+          </a> */}
+          <a
+            href="#works"
+            onClick={(e) => handleDesktopNavClick(e, "works")}
+            className="hover:underline"
+          >
             Works
           </a>
         </div>
@@ -104,19 +120,28 @@ function Navbar() {
               className="w-full flex flex-col items-start gap-6 text-xl sm:hidden border-t border-gray-500"
             >
               <div className="pt-4 pb-4 flex flex-col gap-6 w-full">
-                <a href="#hero" onClick={(e) => handleMobileNavClick(e, "hero")}>Home</a>
-                <a
+                {/* <a
+                  href="#hero"
+                  onClick={(e) => handleMobileNavClick(e, "hero")}
+                >
+                  Home
+                </a> */}
+                {/* <a
                   href="#experiences"
                   onClick={(e) => handleMobileNavClick(e, "experiences")}
                 >
                   Experiences
+                </a> */}
+                <a
+                  href="#works"
+                  onClick={(e) => handleMobileNavClick(e, "works")}
+                >
+                  Works
                 </a>
-                <a href="#works" onClick={(e) => handleMobileNavClick(e, "works")}>Works</a>
               </div>
             </Motion.div>
           )}
         </AnimatePresence>
-
       </div>
     </nav>
   );
