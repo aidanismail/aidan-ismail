@@ -82,13 +82,13 @@ function Navbar() {
           >
             Home
           </a> */}
-          {/* <a
+          <a
             href="#experiences"
             onClick={(e) => handleDesktopNavClick(e, "experiences")}
             className="hover:underline"
           >
             Experiences
-          </a> */}
+          </a>
           <a
             href="#works"
             onClick={(e) => handleDesktopNavClick(e, "works")}
@@ -126,12 +126,12 @@ function Navbar() {
                 >
                   Home
                 </a> */}
-                {/* <a
+                <a
                   href="#experiences"
                   onClick={(e) => handleMobileNavClick(e, "experiences")}
                 >
                   Experiences
-                </a> */}
+                </a>
                 <a
                   href="#works"
                   onClick={(e) => handleMobileNavClick(e, "works")}

@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion as Motion } from "motion/react";
 import ResumePage from "./sections/Resume";
+import PortoPage from "./sections/Portofolio";
 
 function App() {
   useEffect(() => {
@@ -51,9 +52,9 @@ function App() {
                 <section id="hero" className="scroll-mt-100">
                   <Hero onHighlightProject={triggerHighlight} />
                 </section>
-                {/* <section id="experiences" className="scroll-mt-20">
+                <section id="experiences" className="scroll-mt-20">
                   <Experiences />
-                </section> */}
+                </section>
                 <section id="works" className="scroll-mt-20">
                   <Works highlightedId={highlightedProject} />
                 </section>
@@ -62,6 +63,7 @@ function App() {
             </>
           }
         />
+        <Route path="/portofolio" element={<PortoPage />}></Route>
         <Route path="/resume" element={<ResumePage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
