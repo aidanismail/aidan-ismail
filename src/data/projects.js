@@ -9,14 +9,34 @@ import suaraunpad from "../assets/suaraunpad.png";
 import zichara from "../assets/zichara.png";
 import tedx2026 from "../assets/tedx2026.png";
 import youri from "../assets/youri.png";
+import semweb from "../assets/semweb.png";
+import dw from "../assets/dw.png";
 
 export const projects = [
   {
+    id: "dw",
+    title: "Logistics Company Data Warehouse",
+    desc: "An end-to-end logistics data warehouse platform that simulates shipment data, runs ETL processing, and visualizes delivery performance through executive analytics dashboards.",
+    img: dw,
+    link: "https://github.com/atharikputra/DW-Logistic",
+    alt: "https://github.com/atharikputra/DW-Logistic",
+    tags: ["Data Warehouse", "Data Analysis", "ETL", "Python", "PostgreSQL"]
+  },
+  {
+    id: "semweb",
+    title: "NIHONGO GRAPH-RAG",
+    desc: "An LLM-powered semantic search prototype for Japanese vocabulary, combining RDF Knowledge Graph data, SPARQL queries, and natural language answers for easier kanji, hiragana, romaji, and meaning lookup. ",
+    img: semweb,
+    link: "https://github.com/isomorfisma/semweb-nihongo",
+    alt: "https://github.com/isomorfisma/semweb-nihongo",
+    tags: ["Semantic Web", "Knowledge Graph", "Next.js", "RDF/SPARQL", "LLM"]
+  },
+  {
     id: "youri",
     title: "Youri - Your Smart Cooking Assistant",
-    desc: "An AI-powered Progressive Web App (PWA) platform designed to optimize kitchen inventory usage and prevent food waste. ",
+    desc: "An AI microservice for Youri Smart Cooking Assistant that recommends recipes from available ingredients and suggests realistic ingredient substitutions through TF-IDF matching, flavor similarity, and a deep learning ranker. ",
     img: youri,
-    link: "https://github.com/aidanismail/youri-ai-service",
+    link: "https://yourii-fe.vercel.app/",
     alt: "https://github.com/aidanismail/youri-ai-service",
     tags: ["AI", "Machine Learning", "Deep Learning", "NLP"]
   },
@@ -41,7 +61,7 @@ export const projects = [
     title: "SUARAUNPAD",
     desc: "A student advocacy platform for Universitas Padjadjaran students to submit reports, raise aspirations, and participate in policy related voting.",
     img: suaraunpad,
-    link: "https://github.com/mfachri820/SuaraUnpad-PPL",
+    link: "https://wall-replacement-cal-minimum.trycloudflare.com",
     alt: "https://github.com/mfachri820/SuaraUnpad-PPL",
     tags: [
       "Front-End",
