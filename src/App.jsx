@@ -38,7 +38,6 @@ function App() {
   return (
     <div className="main-content min-h-screen">
       <Routes>
-        {/* ROUTE 1: Halaman Utama Portofolio (Hanya muncul di path "/") */}
         <Route
           path="/"
           element={

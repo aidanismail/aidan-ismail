@@ -183,7 +183,7 @@ function Hero({ onHighlightProject }) {
               <span>@aidanismail12</span>
             </a>
 
-            <h3 className="mt-3 text-black ">For the Mobile users</h3>
+            <h3 className="mt-3 font-bold text-black ">For the Mobile users</h3>
             <Link
               target="_blank"
               to="/resume"

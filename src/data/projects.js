@@ -3,7 +3,8 @@ import tedx from "../assets/tedx.png";
 import sust from "../assets/sust.png";
 import robot from "../assets/robot.jpeg";
 import analgo from "../assets/analgo.png";
-import ai from "../assets/ai.png";
+import inprogress from "../assets/in-progress.png"
+//import ai from "../assets/ai.png";
 import pilketos from "../assets/pilketos.png";
 import suaraunpad from "../assets/suaraunpad.png";
 import zichara from "../assets/zichara.png";
@@ -14,11 +15,29 @@ import dw from "../assets/dw.png";
 
 export const projects = [
   {
+    id: "praktis",
+    title: "Praktis",
+    desc: "A secure practicum management platform built with Next.js and FastAPI to replace fragmented cloud workflows with centralized university server storage and secure onboarding.",
+    img: inprogress, 
+    link: "https://github.com/aidanismail/praktis", 
+    alt: "https://github.com/aidanismail/praktis",
+    tags: ["Next.js", "React", "Front-End", "Content Management System", "Product Lead"]
+  },
+  {
+    id: "archiver",
+    title: "Archiver",
+    desc: "A self-hosted personal cloud and media server for archiving large files. Developed using a monorepo architecture with a Next.js frontend, Go/Gin backend, and Dockerized PostgreSQL, Redis, and MinIO.",
+    img: inprogress,
+    link: "https://github.com/aidanismail/archiver", 
+    alt: "https://github.com/aidanismail/archiver",
+    tags: ["Next.js", "React", "Go", "Fullstack", "PostgreSQL", "MinIO"]
+  },
+  {
     id: "dw",
     title: "Logistics Company Data Warehouse",
     desc: "An end-to-end logistics data warehouse platform that simulates shipment data, runs ETL processing, and visualizes delivery performance through executive analytics dashboards.",
     img: dw,
-    link: "https://github.com/atharikputra/DW-Logistic",
+    link: "https://logitrackdw.streamlit.app/",
     alt: "https://github.com/atharikputra/DW-Logistic",
     tags: ["Data Warehouse", "Data Analysis", "ETL", "Python", "PostgreSQL"]
   },
@@ -68,7 +87,8 @@ export const projects = [
       "React",
       "Next.js",
       "Typescript",
-      "Back-End Integration"
+      "CI/CD",
+      "Testing"
     ]
   },
   {
@@ -125,15 +145,15 @@ export const projects = [
     alt: "https://github.com/aidanismail/File-Compressor",
     tags: ["Python", "Streamlit", "Algorithm"]
   },
-  {
-    id: "ai",
-    title: "CodeMind AI Chatbot",
-    desc: "An AI teaching assistant that supports algorithm mastery through interactive code feedback, semantic search, and personalized resource recommendations.",
-    img: ai,
-    link: "https://github.com/mfachri820/AlgorithmAnalysis-AITutor",
-    alt: "https://github.com/mfachri820/AlgorithmAnalysis-AITutor",
-    tags: ["Python", "Streamlit", "Algorithms", "AI"]
-  },
+  // {
+  //   id: "ai",
+  //   title: "CodeMind AI Chatbot",
+  //   desc: "An AI teaching assistant that supports algorithm mastery through interactive code feedback, semantic search, and personalized resource recommendations.",
+  //   img: ai,
+  //   link: "https://github.com/mfachri820/AlgorithmAnalysis-AITutor",
+  //   alt: "https://github.com/mfachri820/AlgorithmAnalysis-AITutor",
+  //   tags: ["Python", "Streamlit", "Algorithms", "AI"]
+  // },
   {
     id: "pilketos",
     title: "Pemilihan Ketua OSIS SMAN 5 Bandung (2022)",
