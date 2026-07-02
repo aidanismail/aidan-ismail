@@ -10,15 +10,13 @@ import { FaPhone } from "react-icons/fa6";
 
 function Hero({ onHighlightProject }) {
   const handleScrollToProject = (e, targetId) => {
-    e.preventDefault(); // Stop the default jump
+    e.preventDefault();
 
     const element = document.getElementById(targetId);
 
     if (element) {
-      // 2. Scroll to it
       element.scrollIntoView({ behavior: "smooth", block: "center" });
 
-      // 3. Trigger the Highlight in App.jsx
       onHighlightProject(targetId);
     } else {
       console.error("Could not find element with id:", targetId);
@@ -34,7 +32,7 @@ function Hero({ onHighlightProject }) {
               Aidan Ismail
             </h1>
             <p className="text-lg text-gray-700 mt-2">
-              Aspiring Digital Craftsman (Developer / Designer)
+              Aspiring Digital Artisan (Developer / Products / Designer)
             </p>
             <p className="text-sm text-gray-700 ">
               Based in Bandung, Indonesia
@@ -49,9 +47,40 @@ function Hero({ onHighlightProject }) {
         </div>
 
         <div className="flex flex-col text-center align justify-center mt-6 bg-white/35 py-4 rounded-xl">
-          <h5>
-            Open for Work! Currently finished{" "}
+          <h5 className="text-sm">
+            Currently working on{" "}
             <a
+              href="#tedx2026"
+              onClick={(e) => handleScrollToProject(e, "tedx2026")}
+              className="hover:underline text-sky-700"
+            >
+              TEDxPU 2026,
+            </a>
+            <span> </span>
+            <a
+              href="#archiver"
+              onClick={(e) => handleScrollToProject(e, "archiver")}
+              className="hover:underline text-sky-700"
+            >
+              Archiver,
+            </a>
+            <span> </span>
+            <a
+              href="#praktis"
+              onClick={(e) => handleScrollToProject(e, "praktis")}
+              className="hover:underline text-sky-700"
+            >
+              Praktis,
+            </a>
+          </h5>
+          <h5 className="text-xs mb-0.5 text-slate-500">
+          and some stuffs for client(s) 
+          </h5>
+
+          <h5>
+            but, Still Open for Work!
+            {/* Currently finished{" "} */}
+            {/* <a
               href="#suaraunpad"
               onClick={(e) => handleScrollToProject(e, "suaraunpad")}
               className="hover:underline text-sky-700"
@@ -64,18 +93,7 @@ function Hero({ onHighlightProject }) {
               onClick={(e) => handleScrollToProject(e, "zichara")}
               className="hover:underline text-sky-700"
             >
-              ZICHARA
-            </a>
-          </h5>
-
-          <h5 className="text-sm">
-            Currently working on{" "}
-            <a
-              href="#tedx2026"
-              onClick={(e) => handleScrollToProject(e, "tedx2026")}
-              className="hover:underline text-sky-700"
-            >
-              TEDxPU 2026,
+              ZICHARA, 
             </a>
             <span> </span>
             <a
@@ -84,7 +102,7 @@ function Hero({ onHighlightProject }) {
               className="hover:underline text-sky-700"
             >
               YOURI - Smart Cooking Assistant
-            </a>
+            </a> */}
           </h5>
         </div>
 
@@ -163,15 +181,7 @@ function Hero({ onHighlightProject }) {
               <span>aidanismail12@gmail.com</span>
             </a>
 
-            <a
-              href="tel:+6281222188986"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 w-fit px-4 py-2 rounded-lg hover:bg-sky-100  font-bold transition-colors"
-            >
-              <FaPhone size={24} />
-              <span>+62 812-2218-8986</span>
-            </a>
+            
 
             <a
               href="https://www.instagram.com/aidanismail12/"

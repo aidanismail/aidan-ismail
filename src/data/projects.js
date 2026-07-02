@@ -1,16 +1,16 @@
 import titrasims from "../assets/titrasims.png";
 import tedx from "../assets/tedx.png";
 import sust from "../assets/sust.png";
-import robot from "../assets/robot.jpeg";
-import analgo from "../assets/analgo.png";
+//import robot from "../assets/robot.jpeg";
+//import analgo from "../assets/analgo.png";
 import inprogress from "../assets/in-progress.png"
 //import ai from "../assets/ai.png";
-import pilketos from "../assets/pilketos.png";
+//import pilketos from "../assets/pilketos.png";
 import suaraunpad from "../assets/suaraunpad.png";
 import zichara from "../assets/zichara.png";
 import tedx2026 from "../assets/tedx2026.png";
 import youri from "../assets/youri.png";
-import semweb from "../assets/semweb.png";
+//import semweb from "../assets/semweb.png";
 import dw from "../assets/dw.png";
 
 export const projects = [
@@ -41,15 +41,15 @@ export const projects = [
     alt: "https://github.com/atharikputra/DW-Logistic",
     tags: ["Data Warehouse", "Data Analysis", "ETL", "Python", "PostgreSQL"]
   },
-  {
-    id: "semweb",
-    title: "NIHONGO GRAPH-RAG",
-    desc: "An LLM-powered semantic search prototype for Japanese vocabulary, combining RDF Knowledge Graph data, SPARQL queries, and natural language answers for easier kanji, hiragana, romaji, and meaning lookup. ",
-    img: semweb,
-    link: "https://github.com/isomorfisma/semweb-nihongo",
-    alt: "https://github.com/isomorfisma/semweb-nihongo",
-    tags: ["Semantic Web", "Knowledge Graph", "Next.js", "RDF/SPARQL", "LLM"]
-  },
+  // {
+  //   id: "semweb",
+  //   title: "NIHONGO GRAPH-RAG",
+  //   desc: "An LLM-powered semantic search prototype for Japanese vocabulary, combining RDF Knowledge Graph data, SPARQL queries, and natural language answers for easier kanji, hiragana, romaji, and meaning lookup. ",
+  //   img: semweb,
+  //   link: "https://github.com/isomorfisma/semweb-nihongo",
+  //   alt: "https://github.com/isomorfisma/semweb-nihongo",
+  //   tags: ["Semantic Web", "Knowledge Graph", "Next.js", "RDF/SPARQL", "LLM"]
+  // },
   {
     id: "youri",
     title: "Youri - Your Smart Cooking Assistant",
@@ -127,24 +127,24 @@ export const projects = [
     alt: "https://www.figma.com/proto/UsxRCH96bJeKnqgVtluXAi/SUSTAINABITE-BACKUP?page-id=&node-id=3-4611&p=f&viewport=-438%2C2335%2C0.16&t=68BbqO8QmpUH4KAg-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A4611",
     tags: ["Figma", "UI/UX", "Design"]
   },
-  {
-    id: "robotik",
-    title: "Smart Follower Robot with Face Recognition",
-    desc: "An autonomous robot capable of real-time face tracking using InsightFace (ArcFace), translating visual data into precise motor control for subject following.",
-    img: robot,
-    link: "https://drive.google.com/file/d/1M5K56R_UKHc0E2HsaeNv2MyVcM5jJR7-/view?usp=drive_link",
-    alt: "https://github.com/mfachri820/RobotikaFaceRecognition",
-    tags: ["Python", "Arduino", "Robotics"]
-  },
-  {
-    id: "analgo",
-    title: "Huffman Visualizer & File Compressor",
-    desc: "A custom file compressor and visualizer that demonstrates lossless compression mechanics by rendering binary tree structures and statistics in real-time.",
-    img: analgo,
-    link: "https://aidanismail-file-compressor-app-haumig.streamlit.app/",
-    alt: "https://github.com/aidanismail/File-Compressor",
-    tags: ["Python", "Streamlit", "Algorithm"]
-  },
+  // {
+  //   id: "robotik",
+  //   title: "Smart Follower Robot with Face Recognition",
+  //   desc: "An autonomous robot capable of real-time face tracking using InsightFace (ArcFace), translating visual data into precise motor control for subject following.",
+  //   img: robot,
+  //   link: "https://drive.google.com/file/d/1M5K56R_UKHc0E2HsaeNv2MyVcM5jJR7-/view?usp=drive_link",
+  //   alt: "https://github.com/mfachri820/RobotikaFaceRecognition",
+  //   tags: ["Python", "Arduino", "Robotics"]
+  // },
+  // {
+  //   id: "analgo",
+  //   title: "Huffman Visualizer & File Compressor",
+  //   desc: "A custom file compressor and visualizer that demonstrates lossless compression mechanics by rendering binary tree structures and statistics in real-time.",
+  //   img: analgo,
+  //   link: "https://aidanismail-file-compressor-app-haumig.streamlit.app/",
+  //   alt: "https://github.com/aidanismail/File-Compressor",
+  //   tags: ["Python", "Streamlit", "Algorithm"]
+  // },
   // {
   //   id: "ai",
   //   title: "CodeMind AI Chatbot",
@@ -154,13 +154,13 @@ export const projects = [
   //   alt: "https://github.com/mfachri820/AlgorithmAnalysis-AITutor",
   //   tags: ["Python", "Streamlit", "Algorithms", "AI"]
   // },
-  {
-    id: "pilketos",
-    title: "Pemilihan Ketua OSIS SMAN 5 Bandung (2022)",
-    desc: "A responsive E-Voting front-end platform designed for the student body, ensuring a seamless and intuitive voting experience integrated with server-side processing.",
-    img: pilketos,
-    link: "https://github.com/fivecybercommunity/Front-End-Pilketos-2023",
-    alt: "https://github.com/fivecybercommunity/Front-End-Pilketos-2023",
-    tags: ["Front-End", "PHP"]
-  }
+  // {
+  //   id: "pilketos",
+  //   title: "Pemilihan Ketua OSIS SMAN 5 Bandung (2022)",
+  //   desc: "A responsive E-Voting front-end platform designed for the student body, ensuring a seamless and intuitive voting experience integrated with server-side processing.",
+  //   img: pilketos,
+  //   link: "https://github.com/fivecybercommunity/Front-End-Pilketos-2023",
+  //   alt: "https://github.com/fivecybercommunity/Front-End-Pilketos-2023",
+  //   tags: ["Front-End", "PHP"]
+  // }
 ];
