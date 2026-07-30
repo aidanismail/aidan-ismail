@@ -35,7 +35,7 @@ function Hero({ onHighlightProject }) {
               Aspiring Digital Artisan (Developer / Products / Designer)
             </p>
             <p className="text-sm text-gray-700 ">
-              Based in Bandung, Indonesia
+              Based in Bandung, Jakarta, Indonesia
             </p>
           </div>
 
@@ -48,15 +48,7 @@ function Hero({ onHighlightProject }) {
 
         <div className="flex flex-col text-center align justify-center mt-6 bg-white/35 py-4 rounded-xl">
           <h5 className="text-sm">
-            Currently working on{" "}
-            <a
-              href="#tedx2026"
-              onClick={(e) => handleScrollToProject(e, "tedx2026")}
-              className="hover:underline text-sky-700"
-            >
-              TEDxPU 2026,
-            </a>
-            <span> </span>
+            Currently working on <span> </span>
             <a
               href="#archiver"
               onClick={(e) => handleScrollToProject(e, "archiver")}
@@ -74,7 +66,7 @@ function Hero({ onHighlightProject }) {
             </a>
           </h5>
           <h5 className="text-xs mb-0.5 text-slate-500">
-          and some stuffs for client(s) 
+            and some stuffs for client(s)
           </h5>
 
           <h5>
@@ -180,8 +172,6 @@ function Hero({ onHighlightProject }) {
               <FaEnvelope size={24} />
               <span>aidanismail12@gmail.com</span>
             </a>
-
-            
 
             <a
               href="https://www.instagram.com/aidanismail12/"
