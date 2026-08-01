@@ -43,21 +43,33 @@ function App() {
           element={
             <>
               <Navbar />
-              <Motion.div
+              <Motion.main
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeInOut" }}
               >
-                <section id="hero" className="scroll-mt-100">
+                <section
+                  id="hero"
+                  className="scroll-mt-100"
+                  aria-labelledby="intro-heading"
+                >
                   <Hero onHighlightProject={triggerHighlight} />
                 </section>
-                <section id="experiences" className="scroll-mt-20">
+                <section
+                  id="experiences"
+                  className="scroll-mt-20"
+                  aria-labelledby="experiences-heading"
+                >
                   <Experiences />
                 </section>
-                <section id="works" className="scroll-mt-20">
+                <section
+                  id="works"
+                  className="scroll-mt-20"
+                  aria-labelledby="works-heading"
+                >
                   <Works highlightedId={highlightedProject} />
                 </section>
-              </Motion.div>
+              </Motion.main>
               <Footer />
             </>
           }

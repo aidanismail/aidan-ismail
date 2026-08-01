@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/optimized/ui/logo.webp";
 import { useRef, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AnimatePresence, motion as Motion } from "motion/react";
@@ -39,6 +39,7 @@ function Navbar() {
   return (
     <nav
       ref={navRef}
+      aria-label="Primary navigation"
       className="bg-[#ffffff]/40 backdrop-blur-xl w-full sticky top-0 z-50"
     >
       <div className="flex flex-wrap justify-between items-center py-2 px-4 max-w-4xl mx-auto">
@@ -55,7 +56,11 @@ function Navbar() {
           <img
             className="-mr-2 w-12 transition-transform duration-300 ease-in-out group-hover:rotate-15"
             src={logo}
-            alt="aidan's logo"
+            width="238"
+            height="241"
+            fetchPriority="high"
+            decoding="async"
+            alt=""
           />
           <p className="font-bold font-cal text-xl tracking-tighter">
             Aidan Ismail
@@ -68,6 +73,8 @@ function Navbar() {
             type="button"
             onClick={() => setIsOpen((v) => !v)}
             aria-label="Toggle menu"
+            aria-expanded={isOpen}
+            aria-controls="mobile-navigation"
           >
             <GiHamburgerMenu size={24} />
           </button>
@@ -112,6 +119,7 @@ function Navbar() {
         >
           {isOpen && (
             <Motion.div
+              id="mobile-navigation"
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}

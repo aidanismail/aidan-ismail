@@ -1,21 +1,22 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Items from "../components/Items";
 import { experienceData } from "../data/experiences";
 
 function Experiences() {
   return (
     <>
-      <main className="max-w-3xl mx-auto px-4 mt-8">
+      <div className="max-w-3xl mx-auto px-4 mt-8">
         {/* Page Heading */}
-        <h3 className="text-xl font-bold underline decoration-4 decoration-black underline-offset-6 mb-4">
+        <h2
+          id="experiences-heading"
+          className="text-xl font-bold underline decoration-4 decoration-black underline-offset-6 mb-4"
+        >
           Experiences
-        </h3>
+        </h2>
         {/* The List */}
         <div>
-          {experienceData.map((exp, index) => (
+          {experienceData.map((exp) => (
             <Items
-              key={index}
+              key={`${exp.company}-${exp.title}`}
               title={exp.title}
               company={exp.company}
               period={exp.period}
@@ -24,7 +25,7 @@ function Experiences() {
             />
           ))}
         </div>
-      </main>
+      </div>
       
     </>
   );

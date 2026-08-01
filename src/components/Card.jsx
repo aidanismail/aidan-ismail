@@ -1,7 +1,7 @@
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { motion as Motion } from "motion/react";
 
-function Card({ id, isHighlighted, title, desc, img, link, alt, tags }) {
+function Card({ id, isHighlighted, title, desc, img, imgSrcSet, link, alt, tags }) {
   return (
     <Motion.div
       id={id}
@@ -34,10 +34,19 @@ function Card({ id, isHighlighted, title, desc, img, link, alt, tags }) {
       <div className="flex flex-col h-full rounded-lg overflow-hidden  bg-white">
         {/* Image Section */}
         <div className="h-64 overflow-hidden">
-          <a className="cursor-pointer" href={link} target="_blank">
+          <a
+            className="cursor-pointer"
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src={img}
+              srcSet={imgSrcSet}
+              sizes="(min-width: 768px) 356px, calc(100vw - 32px)"
               alt={title}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover  hover:scale-105 hover:brightness-75 transition-all duration-500 ease-in-out"
             />
           </a>
@@ -49,9 +58,9 @@ function Card({ id, isHighlighted, title, desc, img, link, alt, tags }) {
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-4">
-            {tags.map((tag, index) => (
+            {tags.map((tag) => (
               <span
-                key={index}
+                key={tag}
                 className="text-xs bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium"
               >
                 {tag}
@@ -65,13 +74,16 @@ function Card({ id, isHighlighted, title, desc, img, link, alt, tags }) {
 
           {/* Links */}
           <div className="flex gap-4 mt-auto">
-            {link && (
+            {alt && (
               <a
                 href={alt}
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`More about ${title}`}
                 className="flex items-center gap-2 text-sm font-bold hover:underline text-sky-700"
               >
-                <FaExternalLinkAlt size={12} /> More
+                <FaExternalLinkAlt size={12} aria-hidden="true" /> More
+                <span className="sr-only"> about {title}</span>
               </a>
             )}
           </div>

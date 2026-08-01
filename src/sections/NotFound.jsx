@@ -1,24 +1,24 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion as Motion } from "motion/react";
 
 function NotFound() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-[#f0e7db] transition-colors duration-300">
-      <motion.div
+      <Motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-center"
       >
         {/* Angka 404 Raksasa */}
-        <motion.h1
+        <Motion.h1
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-8xl font-black text-stone-600 mb-4 tracking-tighter"
         >
           404
-        </motion.h1>
+        </Motion.h1>
 
         {/* Judul & Deskripsi */}
         <h2 className="text-2xl font-bold text-stone-600  mb-4">
@@ -36,7 +36,7 @@ function NotFound() {
         >
           <span>Back</span>
         </Link>
-      </motion.div>
+      </Motion.div>
     </main>
   );
 }

@@ -4,7 +4,12 @@ function Footer() {
       <p className="font-cal">&copy; 2026 Aidan Ismail. All Rights Reserved.</p>
       <p  className="text-xs pt-1">
         Heavily inspired by{" "}
-        <a className="hover:underline text-sky-700" href="https://www.craftz.dog/" target="_blank">
+        <a
+          className="hover:underline text-sky-700"
+          href="https://www.craftz.dog/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           https://www.craftz.dog/
         </a>
       </p>

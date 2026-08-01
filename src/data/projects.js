@@ -1,17 +1,25 @@
-import titrasims from "../assets/titrasims.png";
-import tedx from "../assets/tedx.png";
-import sust from "../assets/sust.png";
+import titrasims from "../assets/optimized/720/titrasims.webp";
+import titrasimsLarge from "../assets/optimized/1440/titrasims.webp";
+import tedx from "../assets/optimized/720/tedx.webp";
+import tedxLarge from "../assets/optimized/1440/tedx.webp";
+import sust from "../assets/optimized/720/sust.webp";
+import sustLarge from "../assets/optimized/1440/sust.webp";
 //import robot from "../assets/robot.jpeg";
 //import analgo from "../assets/analgo.png";
 import inprogress from "../assets/in-progress.png"
 //import ai from "../assets/ai.png";
 //import pilketos from "../assets/pilketos.png";
-import suaraunpad from "../assets/suaraunpad.png";
-import zichara from "../assets/zichara.png";
-import tedx2026 from "../assets/tedx2026.png";
-import youri from "../assets/youri.png";
+import suaraunpad from "../assets/optimized/720/suaraunpad.webp";
+import suaraunpadLarge from "../assets/optimized/1440/suaraunpad.webp";
+import zichara from "../assets/optimized/720/zichara.webp";
+import zicharaLarge from "../assets/optimized/1440/zichara.webp";
+import tedx2026 from "../assets/optimized/720/tedx2026.webp";
+import tedx2026Large from "../assets/optimized/1440/tedx2026.webp";
+import youri from "../assets/optimized/720/youri.webp";
+import youriLarge from "../assets/optimized/1440/youri.webp";
 //import semweb from "../assets/semweb.png";
-import dw from "../assets/dw.png";
+import dw from "../assets/optimized/720/dw.webp";
+import dwLarge from "../assets/optimized/1440/dw.webp";
 
 export const projects = [
   {
@@ -37,6 +45,7 @@ export const projects = [
     title: "Logistics Company Data Warehouse",
     desc: "An end-to-end logistics data warehouse platform that simulates shipment data, runs ETL processing, and visualizes delivery performance through executive analytics dashboards.",
     img: dw,
+    imgSrcSet: `${dw} 720w, ${dwLarge} 1275w`,
     link: "https://logitrackdw.streamlit.app/",
     alt: "https://github.com/atharikputra/DW-Logistic",
     tags: ["Data Warehouse", "Data Analysis", "ETL", "Python", "PostgreSQL"]
@@ -55,6 +64,7 @@ export const projects = [
     title: "Youri - Your Smart Cooking Assistant",
     desc: "An AI microservice for Youri Smart Cooking Assistant that recommends recipes from available ingredients and suggests realistic ingredient substitutions through TF-IDF matching, flavor similarity, and a deep learning ranker. ",
     img: youri,
+    imgSrcSet: `${youri} 720w, ${youriLarge} 1440w`,
     link: "https://yourii-fe.vercel.app/",
     alt: "https://github.com/aidanismail/youri-ai-service",
     tags: ["AI", "Machine Learning", "Deep Learning", "NLP"]
@@ -64,6 +74,7 @@ export const projects = [
     title: "TEDxPadjadjaranUniversity 2026 Official Website",
     desc: "The official responsive website for TEDxPadjadjaran University, featuring interactive page layouts and animation-rich sections for a consistent visual experience across all devices.",
     img: tedx2026,
+    imgSrcSet: `${tedx2026} 720w, ${tedx2026Large} 1440w`,
     link: "https://tedxpadjadjaranuniversity.com/",
     alt: "https://github.com/HitMagicc/tedx-unpad2026",
     tags: [
@@ -80,6 +91,7 @@ export const projects = [
     title: "SUARAUNPAD",
     desc: "A student advocacy platform for Universitas Padjadjaran students to submit reports, raise aspirations, and participate in policy related voting.",
     img: suaraunpad,
+    imgSrcSet: `${suaraunpad} 720w, ${suaraunpadLarge} 1440w`,
     link: "https://wall-replacement-cal-minimum.trycloudflare.com",
     alt: "https://github.com/mfachri820/SuaraUnpad-PPL",
     tags: [
@@ -96,6 +108,7 @@ export const projects = [
     title: "ZICHARA",
     desc: "Augmented reality learning application that helps users learn Hanzi characters and Pinyin through interactive visual guidance.",
     img: zichara,
+    imgSrcSet: `${zichara} 720w, ${zicharaLarge} 1440w`,
     link: "https://drive.google.com/drive/folders/1_XeGWrUN8J0faLrk6qlAtklywWt17isr?usp=sharing",
     alt: "https://github.com/Kelompok-2-IMK/zichara/",
     tags: ["Unity", "C#", "Vuforia"]
@@ -105,6 +118,7 @@ export const projects = [
     title: "TITRA SIMS",
     desc: "Android AR titration simulator built with Unity and Vuforia. Digitalized titration process for pharmacy lab into interactive 3D virtual experiences.",
     img: titrasims,
+    imgSrcSet: `${titrasims} 720w, ${titrasimsLarge} 1080w`,
     link: "https://drive.google.com/drive/folders/1G_1j0BzmT727MOmmaechpomC213SvS6d?usp=sharing",
     alt: "https://github.com/aidanismail/PharmaAR",
     tags: ["Unity", "C#", "Vuforia"]
@@ -114,6 +128,7 @@ export const projects = [
     title: "TEDxPadjadjaranUniversity 2025 Official Website",
     desc: "The official responsive website for TEDxPadjadjaran University, featuring a modular design system for visual consistency across all devices.",
     img: tedx,
+    imgSrcSet: `${tedx} 720w, ${tedxLarge} 1440w`,
     link: "https://www.figma.com/proto/ma4xdNtbYhDlCVMP4NNOGV/tedX?page-id=&node-id=466-74&p=f&viewport=225%2C417%2C0.02&t=G3k6LPUJEJH71gB2-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=466%3A74&show-proto-sidebar=1",
     alt: "https://www.figma.com/proto/ma4xdNtbYhDlCVMP4NNOGV/tedX?page-id=&node-id=466-74&p=f&viewport=225%2C417%2C0.02&t=G3k6LPUJEJH71gB2-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=466%3A74&show-proto-sidebar=1",
     tags: ["Figma", "UI/UX", "Design"]
@@ -123,6 +138,7 @@ export const projects = [
     title: "Sustainabite",
     desc: "a UI/UX GEMASTIK 2025 proposal for a food rescue platform connecting MSMEs with surplus food to consumers, utilizing gamification and POS systems to facilitate sustainable environment.",
     img: sust,
+    imgSrcSet: `${sust} 720w, ${sustLarge} 1440w`,
     link: "https://drive.google.com/drive/folders/1MezbfeLQ_KIGzaRUWxUNKyLSJjUv3Aq8",
     alt: "https://www.figma.com/proto/UsxRCH96bJeKnqgVtluXAi/SUSTAINABITE-BACKUP?page-id=&node-id=3-4611&p=f&viewport=-438%2C2335%2C0.16&t=68BbqO8QmpUH4KAg-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A4611",
     tags: ["Figma", "UI/UX", "Design"]

@@ -1,12 +1,9 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import aidan from "../assets/aidan.png";
+import aidan from "../assets/optimized/ui/aidan.webp";
 import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa6";
 
 function Hero({ onHighlightProject }) {
   const handleScrollToProject = (e, targetId) => {
@@ -24,11 +21,14 @@ function Hero({ onHighlightProject }) {
   };
   return (
     <>
-      <main className="max-w-3xl mx-auto p-4 mt-20">
+      <div className="max-w-3xl mx-auto p-4 mt-20">
         {/* hero */}
         <div className="flex flex-col sm:flex-row justify-between items-center mb-10">
           <div className="flex flex-col sm:pr-8 text-center sm:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold font-cal tracking-tighter">
+            <h1
+              id="intro-heading"
+              className="text-4xl md:text-5xl font-bold font-cal tracking-tighter"
+            >
               Aidan Ismail
             </h1>
             <p className="text-lg text-gray-700 mt-2">
@@ -41,13 +41,17 @@ function Hero({ onHighlightProject }) {
 
           <img
             src={aidan}
+            width="250"
+            height="250"
+            fetchPriority="high"
+            decoding="async"
             className="w-30 h-30 mt-6 md:mt-0  md:w-36 md:h-36 rounded-full object-cover border-2 border-white shrink-0"
             alt="Aidan's Profile"
           />
         </div>
 
         <div className="flex flex-col text-center align justify-center mt-6 bg-white/35 py-4 rounded-xl">
-          <h5 className="text-sm">
+          <p className="text-sm">
             Currently working on <span> </span>
             <a
               href="#archiver"
@@ -64,12 +68,12 @@ function Hero({ onHighlightProject }) {
             >
               Praktis,
             </a>
-          </h5>
-          <h5 className="text-xs mb-0.5 text-slate-500">
+          </p>
+          <p className="text-xs mb-0.5 text-slate-500">
             and some stuffs for client(s)
-          </h5>
+          </p>
 
-          <h5>
+          <p>
             but, Still Open for Work!
             {/* Currently finished{" "} */}
             {/* <a
@@ -95,20 +99,20 @@ function Hero({ onHighlightProject }) {
             >
               YOURI - Smart Cooking Assistant
             </a> */}
-          </h5>
+          </p>
         </div>
 
         {/* bio */}
         <div className="mt-8 justify">
-          <h3 className="text-xl font-bold underline decoration-4 decoration-black underline-offset-4 mb-4">
+          <h2 className="text-xl font-bold underline decoration-4 decoration-black underline-offset-4 mb-4">
             Bio
-          </h3>
+          </h2>
 
-          <h4 className="text-justify leading-normal">
+          <p className="text-justify leading-normal">
             Computer Science undergraduate at Universitas Padjadjaran
             specializing in Software Engineering, Applied AI, and Data Stuffs. I
             build and design scalable digital solutions to solve anything.
-          </h4>
+          </p>
 
           <div className="mt-6 text-justify leading-relaxed">
             <div>
@@ -138,9 +142,9 @@ function Hero({ onHighlightProject }) {
 
         {/* on the internet */}
         <div className="mt-8">
-          <h3 className="text-xl font-bold underline decoration-4 decoration-black underline-offset-4 mb-4">
+          <h2 className="text-xl font-bold underline decoration-4 decoration-black underline-offset-4 mb-4">
             Links
-          </h3>
+          </h2>
 
           <div className="flex flex-col gap-2 text-sky-700">
             <a
@@ -201,7 +205,7 @@ function Hero({ onHighlightProject }) {
             </Link>
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 }
